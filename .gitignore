@@ -1,0 +1,58 @@
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.joblib
+
+# Excluir solo joblib de encoders (pero mantener el modelo)
+# Si querés mantener tu modelo, sacá esta línea:
+# modelo_lightgbm_mejor.joblib
+
+# ============================================
+# Entornos virtuales
+# ============================================
+.venv/
+venv/
+env/
+ENV/
+*env/
+
+# ============================================
+# Archivos temporales / cache / logs
+# ============================================
+*.log
+*.tmp
+*.temp
+*.DS_Store
+*.sqlite
+*.db
+
+# ============================================
+# Jupyter / Notebook
+# ============================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ============================================
+# VS Code
+# ============================================
+.vscode/
+*.code-workspace
+
+# ============================================
+# Streamlit local
+# ============================================
+.streamlit/
+
+# ============================================
+# Archivos grandes (tu dataset)
+# ============================================
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
