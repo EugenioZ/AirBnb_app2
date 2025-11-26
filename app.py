@@ -80,11 +80,11 @@ except Exception as e:
 # ==========================
 st.sidebar.header("✏️ Parámetros del alojamiento")
 
-accommodates = st.sidebar.number_input("Capacidad (personas)", min_value=1, value=2, step=1)
+accommodates = st.sidebar.number_input("Capacidad (personas)", min_value=1, value=4, step=1)
 
-bedrooms = st.sidebar.number_input("Dormitorios", min_value=0, value=1, step=1)
+bedrooms = st.sidebar.number_input("Dormitorios", min_value=0, value=2, step=1)
 
-beds = st.sidebar.number_input("Camas", min_value=0, value=1, step=1)
+beds = st.sidebar.number_input("Camas", min_value=0, value=3, step=1)
 
 bathrooms = st.sidebar.number_input("Baños", min_value=0.0, value=1.0, step=0.5)
 
@@ -93,23 +93,23 @@ availability_365 = st.sidebar.number_input(
     "Disponibilidad anual (1–365 días)", 
     min_value=1, 
     max_value=365, 
-    value=180
+    value=200
 )
 
 review_scores_rating = st.sidebar.number_input(
     "Puntaje reviews (1–5)", 
     min_value=1.0, 
     max_value=5.0, 
-    value=4.5, 
+    value=4.8, 
     step=0.1
 )
 
 # Estas NO tienen límite máximo
-reviews_per_month = st.sidebar.number_input("Reviews por mes", min_value=0.0, value=1.0, step=0.1)
+reviews_per_month = st.sidebar.number_input("Reviews por mes", min_value=0.0, value=1.2, step=0.1)
 
-number_of_reviews = st.sidebar.number_input("Número total de reviews", min_value=0, value=10, step=1)
+number_of_reviews = st.sidebar.number_input("Número total de reviews", min_value=0, value=50, step=1)
 
-dist_obelisco_km = st.sidebar.number_input("Distancia al Obelisco (km)", min_value=0.0, value=5.0, step=0.1)
+dist_obelisco_km = st.sidebar.number_input("Distancia al Obelisco (km)", min_value=0.0, value=3.5, step=0.1)
 
 
 # Dropdown con los barrios
